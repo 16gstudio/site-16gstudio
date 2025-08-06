@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>16G Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1e1e1e;
+      color: #ffffff;
+      font-family: 'Press Start 2P', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 64px;
+      color: #fff;
+    }
+
+    .logo .g {
+      color: gold;
+      text-shadow: 0 0 5px #ffdf00, 0 0 10px #ffaa00;
+    }
+
+    .tagline {
+      margin-top: 24px;
+      font-size: 16px;
+      color: #f0f0f0;
+    }
+
+    .pixel-line {
+      margin-top: 24px;
+      width: 240px;
+      height: 6px;
+      background: repeating-linear-gradient(90deg, #00ffff 0 8px, #ff00ff 8px 16px, #ffff00 16px 24px);
+    }
+
+    .status {
+      margin-top: 50px;
+      font-size: 18px;
+      color: #00ffff;
+      text-shadow: 0 0 4px #00ffff, 0 0 8px #008080;
+    }
+
+    .blinker {
+      animation: blink 1s steps(2, start) infinite;
+    }
+
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+
+    .animation {
+      margin-top: 50px;
+    }
+
+    .animation img {
+      width: 96px;
+      height: auto;
+      image-rendering: pixelated;
+    }
+
+    .email {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #aaaaaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    16<span class="g">G</span> Studio
+  </div>
+  <div class="tagline">
+    Games e sistemas com alma pixel.
+  </div>
+  <div class="pixel-line"></div>
+  <div class="status">
+    Em manutenção... <span class="blinker">█</span>
+  </div>
+  
+  <div class="email">
+    contato@16gstudio.com.br
+  </div>
+</body>
+</html>
