@@ -22,7 +22,7 @@
 
     .logo {
       font-size: 64px;
-      color: #fff;
+      color: #00ffcc;
     }
 
     .logo .g {
@@ -36,38 +36,29 @@
       color: #f0f0f0;
     }
 
-    .pixel-line {
-      margin-top: 24px;
-      width: 240px;
-      height: 6px;
-      background: repeating-linear-gradient(90deg, #00ffff 0 8px, #ff00ff 8px 16px, #ffff00 16px 24px);
-    }
-
-    .status {
+    .pixel-code {
       margin-top: 50px;
-      font-size: 18px;
-      color: #00ffff;
-      text-shadow: 0 0 4px #00ffff, 0 0 8px #008080;
+      font-size: 12px;
+      color: #00ffcc;
+      background: #111;
+      padding: 16px;
+      border: 2px solid #00ffcc;
+      text-shadow: 0 0 4px #00ffcc;
+      width: 320px;
+      max-width: 90%;
+      text-align: left;
+      box-sizing: border-box;
     }
 
     .blinker {
       animation: blink 1s steps(2, start) infinite;
+      vertical-align: middle;
     }
 
     @keyframes blink {
       to {
         visibility: hidden;
       }
-    }
-
-    .animation {
-      margin-top: 50px;
-    }
-
-    .animation img {
-      width: 96px;
-      height: auto;
-      image-rendering: pixelated;
     }
 
     .email {
@@ -81,14 +72,15 @@
   <div class="logo">
     16<span class="g">G</span> Studio
   </div>
+
   <div class="tagline">
     Games e sistemas com alma pixel.
   </div>
-  <div class="pixel-line"></div>
-  <div class="status">
-    Em manutenção... <span class="blinker">█</span>
+
+  <div class="pixel-code">
+    &gt; Em manutenção... <span class="blinker">█</span>
   </div>
-  
+
   <div class="email">
     contato@16gstudio.com.br
   </div>
